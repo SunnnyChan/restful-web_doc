@@ -13,6 +13,10 @@ module.exports = {
         path: '/getstart/',      // 可选的
         collapsable: false, // 可选的, 默认值是 true,
         sidebarDepth: 1,    // 可选的, 默认值是 1
+        children: [
+          '/getstart/what/',
+          '/getstart/demo/'
+        ]
       }
     ]
   }
