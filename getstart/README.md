@@ -49,9 +49,9 @@ mv restful-web ${SERVER_NAME}
 sh create_rw-server_project.sh restful-web_demo 
 ```
 
-# 在 sunny-server/src/main/java/com/sunny/rw/server/modules 目录下 创建 mainClass：
-SunnyServer.java
+# 在 sunny-server/src/main/java/com/sunny/rw/server/modules 目录下 创建 mainClass：  
 
+SampleServer.java  
 
 ## Create a Web server named SampleServer  
 
