@@ -1,8 +1,9 @@
 # 工程案例
 
-How to quickly create a web service or web application?  
+How to quickly create a web service or web application? 
+如何创建一个自定义的服务？ 
 
-## 创建工程
+## 创建工程  
 
 * 工程创建脚本 create_rw-server_project.sh  
 
@@ -31,11 +32,6 @@ fi
 git clone https://github.com/SunnnyChan/restful-web
 
 find restful-web -name ".git" | xargs rm -Rf
-
-for pom in $(find restful-web -name "pom.xml")
-do
-  ${SED} -i "s/restful-web/${SERVER_NAME}/g" ${pom}
-done
 
 mv restful-web ${SERVER_NAME}
 ```  
@@ -76,13 +72,15 @@ public class SampleServer extends AbstractRwServer {
 }
 ```  
 
-* 创建配置文件  sample-rw-server.conf  
+* 创建配置文件  
 
-由于可以启动多个服务，所以可以独立创建每个服务对应的配置文件。  
+可以使用默认的配置文件rw-server.conf，进行修改后使用。
+由于可以启动多个服务，所以也可以独立创建每个服务对应的配置文件。  
+
 
 ```bash
 # 从模板 rw-server.conf  复制
-cp rw-server/conf/rw-server.conf  rw-server/conf/sample-rw-server.conf  
+cp rw-server/conf/rw-server.conf  rw-server/conf/sample-server.conf  
 ```
 ```conf
 # 按需修改
@@ -98,10 +96,16 @@ server {
 }
 ```
 
-### 构建 & 启动  
+### 构建  
 
 ```bash
 sh build.sh && sh sample-control.sh start
+```
+
+### 启动 
+
+```bash
+sh control.sh SampleServer conf/sample-server.conf start
 ```
 
 ***TODO***  
@@ -160,4 +164,7 @@ rw-server 实例的生成 需要修改脚本来自动生成。
 ```
 
 ## 部署  
+
+编译完成后，会产出 restful-web/rw-server/output 文件，  
+可以任意拷贝部署，部署完成后通过 control.sh 脚本启动。
 

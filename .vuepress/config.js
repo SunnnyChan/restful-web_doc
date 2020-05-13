@@ -15,7 +15,9 @@ module.exports = {
         sidebarDepth: 1,    // 可选的, 默认值是 1
         children: [
           '/getstart/what/',
-          '/getstart/demo/'
+          '/getstart/demo/',
+          '/getstart/modules/',
+          '/getstart/conf/'
         ]
       }
     ]
