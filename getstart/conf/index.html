@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>配置文件 | CheatSheet</title>
+    <meta name="description" content="">
+    <meta name="generator" content="VuePress 1.4.0">
+    
+    
+    <link rel="preload" href="/restful-web_doc/assets/css/0.styles.d2cf7926.css" as="style"><link rel="preload" href="/restful-web_doc/assets/js/app.d8f8a4a0.js" as="script"><link rel="preload" href="/restful-web_doc/assets/js/2.8729a11c.js" as="script"><link rel="preload" href="/restful-web_doc/assets/js/7.67614a12.js" as="script"><link rel="prefetch" href="/restful-web_doc/assets/js/10.f6533a2f.js"><link rel="prefetch" href="/restful-web_doc/assets/js/11.020a55c7.js"><link rel="prefetch" href="/restful-web_doc/assets/js/3.24086fb4.js"><link rel="prefetch" href="/restful-web_doc/assets/js/4.5f60d4ea.js"><link rel="prefetch" href="/restful-web_doc/assets/js/5.e8409713.js"><link rel="prefetch" href="/restful-web_doc/assets/js/6.f44fd426.js"><link rel="prefetch" href="/restful-web_doc/assets/js/8.6bcc2d13.js"><link rel="prefetch" href="/restful-web_doc/assets/js/9.15c2bde4.js">
+    <link rel="stylesheet" href="/restful-web_doc/assets/css/0.styles.d2cf7926.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/restful-web_doc/" class="home-link router-link-active"><!----> <span class="site-name">CheatSheet</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="http://www.github.com/sunnnychan" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="http://www.github.com/sunnnychan" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><a href="/restful-web_doc/getstart/" class="sidebar-heading clickable router-link-active open"><span>Get Start</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/restful-web_doc/getstart/what/" class="sidebar-link">restful-web 介绍</a></li><li><a href="/restful-web_doc/getstart/demo/" class="sidebar-link">工程案例</a></li><li><a href="/restful-web_doc/getstart/modules/" class="sidebar-link">模块</a></li><li><a href="/restful-web_doc/getstart/conf/" class="active sidebar-link">配置文件</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="配置文件"><a href="#配置文件" class="header-anchor">#</a> 配置文件</h1> <p>rw-server.conf</p> <div class="language-yml extra-class"><pre class="language-yml"><code>server <span class="token punctuation">{</span>
+  <span class="token key atrule">name</span> <span class="token punctuation">:</span> rw<span class="token punctuation">-</span>server
+  <span class="token key atrule">port</span> <span class="token punctuation">:</span> <span class="token number">8899</span>
+  <span class="token key atrule">env</span> <span class="token punctuation">:</span> <span class="token string">&quot;product&quot;</span>
+
+  <span class="token key atrule">controller-class-path</span> <span class="token punctuation">:</span> <span class="token string">&quot;com.sunny.rw.server.controller&quot;</span>
+  <span class="token key atrule">modules-class-path</span> <span class="token punctuation">:</span> <span class="token string">&quot;com.sunny.rw.server.modules&quot;</span>
+  <span class="token key atrule">modules</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+
+  <span class="token comment"># running as web service</span>
+  <span class="token key atrule">service-register-flag</span> <span class="token punctuation">:</span> <span class="token boolean important">false</span>
+  <span class="token key atrule">zk_register-path</span> <span class="token punctuation">:</span> <span class="token string">&quot;&quot;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment"># dependency service</span>
+dependency_service <span class="token punctuation">{</span>
+
+<span class="token punctuation">}</span>
+
+<span class="token comment"># infrastructure</span>
+infra <span class="token punctuation">{</span>
+  <span class="token key atrule">zk_conn-str</span> <span class="token punctuation">:</span> <span class="token string">&quot;&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/restful-web_doc/getstart/modules/" class="prev">
+        模块
+      </a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/restful-web_doc/assets/js/app.d8f8a4a0.js" defer></script><script src="/restful-web_doc/assets/js/2.8729a11c.js" defer></script><script src="/restful-web_doc/assets/js/7.67614a12.js" defer></script>
+  </body>
+</html>
